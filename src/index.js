@@ -7,17 +7,17 @@ const dockerHub = "https://registry-1.docker.io";
 
 const routes = {
   // production
-  ["docker." + CUSTOM_DOMAIN]: dockerHub,
-  ["quay." + CUSTOM_DOMAIN]: "https://quay.io",
-  ["gcr." + CUSTOM_DOMAIN]: "https://gcr.io",
-  ["k8s-gcr." + CUSTOM_DOMAIN]: "https://k8s.gcr.io",
-  ["k8s." + CUSTOM_DOMAIN]: "https://registry.k8s.io",
-  ["ghcr." + CUSTOM_DOMAIN]: "https://ghcr.io",
-  ["cloudsmith." + CUSTOM_DOMAIN]: "https://docker.cloudsmith.io",
-  ["ecr." + CUSTOM_DOMAIN]: "https://public.ecr.aws",
+  ["docker." + "shaunyang.site"]: dockerHub,
+  ["quay." + "shaunyang.site"]: "https://quay.io",
+  ["gcr." + "shaunyang.site"]: "https://gcr.io",
+  ["k8s-gcr." + "shaunyang.site"]: "https://k8s.gcr.io",
+  ["k8s." + "shaunyang.site"]: "https://registry.k8s.io",
+  ["ghcr." + "shaunyang.site"]: "https://ghcr.io",
+  ["cloudsmith." + "shaunyang.site"]: "https://docker.cloudsmith.io",
+  ["ecr." + "shaunyang.site"]: "https://public.ecr.aws",
 
   // staging
-  ["docker-staging." + CUSTOM_DOMAIN]: dockerHub,
+  ["docker-staging." + "shaunyang.site"]: dockerHub,
 };
 
 function routeByHosts(host) {
